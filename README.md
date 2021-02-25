@@ -1,2 +1,2 @@
 # rsschool-cv
-My curriculum vitae
+https://KSGitUser.github.io/rsschool-cv/cv
