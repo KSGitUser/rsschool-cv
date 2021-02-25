@@ -87,3 +87,54 @@ Based on article [Merge Sort Algorithm in JavaScript](https://medium.com/javascr
     
     console.log(sortedArray); // [5, 45, 56, 87, 95, 96]
 ```
+
+### Employment history
+
+##### Dec 2019 - present time
+-   **Finfort R&D**.\
+    *Krasnodar (Russia)*
+    Front-End Developer. Worked on a B2B product. Used `Nuxt` (`Vue`) and `Stencil`. Since 2020, I have been working remotely. 
+
+##### Jul 2019 - Dec 2019
+-  **Ajax, a real estate agency.** 
+   *Krasnodar (Russia).*
+   Front-End Developer. Worked on an in-house product. Used `Vue`.
+
+##### Jun 2000 - Jul 2018
+-   **Operated in the real estate market as an entrepreneur**
+    Stavropol (Russia).
+
+### Education
+#### *Qualifications* 
+---------------------------------------
+##### November 2020 - present time
+- **[ITMO University](https://design.itmo.ru/courses/web-developer/)**\
+    *St. Petersburg, Russia*\
+    Online course on `JavaScript` and `Node.js`. Training projects on [Github](https://github.com/KSGitUser/ITMO)
+
+##### Jun 2018 - Jul 2019
+- **[Geekbrains](https://geekbrains.ru/geek_university/web)**\
+  *Moscow, Russia*\
+  Online Web Developer course. Training projects on [Github](https://github.com/KSGitUser?tab=repositories) 
+
+I'm trying to get a continuing education including, but not all of them: `TypeScript` course on learn.javascript.ru, `Nuxt.js` and `Vue.js` by Maximilian Schwarzmüller on Udemy.
+
+#### *Higher education* 
+--------------------------------------
+##### 2002 - 2005
+-    **North Caucasian Polytechnic University**\
+    *Stavropol, Russia*\
+    Full-time postgraduate studies.\ 
+    Academic degree: *Candidate of Technical Sciences*
+ 
+##### 1997 - 2002
+- **Stavropol State University**\
+  *Stavropol, Russia*\
+  Faculty of Romance-Germanic Languages.\ 
+  Specialty: *Computer Science and English Teacher*
+
+### English language
+According to EF SET [**C1 Advanced**](https://www.efset.org/cert/RymtkQ)
+
+
+*P.S. Ready to relocate or perform to my full potential remotely*
