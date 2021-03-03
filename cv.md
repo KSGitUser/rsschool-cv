@@ -11,7 +11,7 @@
 ### Experience
 I have been working as a front-end developer since the summer of 2019. Before that, I used to be an entrepreneur operating in the real estate market for about 18 years. I got my university degree in Computer Science with the major in English and Computer Science Teaching. I didn’t have many opportunities to practice coding for a long time, but I had a good base to get some knowledge of modern computer languages. In 2018, I decided to learn Web Development online at Geekbrains. I studied HTML, JavaScript and PHP for about a year. After that, I got a job as a front-end developer with Ajax, a real estate company in Krasnodar. I worked on an in-house product of the company. Vue was my main framework. After six months, I got a job with another company where I have been working until now.  My experience as an entrepreneur made it possible for me to practice my soft skills related to time management, communication, and problem-solving.
 
-Though I have studied various programming languages like PHP, I really like JavaScript because it can help to solve a wide range of tasks, adding an action to a button on a web page, creating an IDE like Visual Studio Code or running scripts server-side to produce dynamic web page content. It's not at all boring, and I keep doing my best to enhance my knowledge and learn new language features. I would like to become a professional software engineer who could organize and inspire his coworkers to write a good and clean code. 
+Though I have studied various programming languages like PHP, I really like JavaScript because it can help to solve a wide range of tasks, adding an action to a button on a web page, creating an IDE like Visual Studio Code or running scripts server-side to produce dynamic web page content. It's not at all boring, and I keep doing my best to enhance my knowledge and learn new language features. I would like to become a professional software engineer who could organize and inspire his coworkers to write a good and clean code.
 ### Skills
 My everyday tools:
 - HTML
@@ -36,7 +36,7 @@ Tools I used during the Geekbrains course:
 - React
     - Redux
 - Jest
-- SASS 
+- SASS
 - PHP
     - Yii 2
 - MySQL
@@ -49,11 +49,12 @@ A sorting algorithm in JavaScript.
 Based on article [Merge Sort Algorithm in JavaScript](https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060)
 
 ```js
+<pre><code>
     const merge = (firstArr, secondArr, compareFunc) => {
       const sortedArr = [];
       let i=0;
       let j=0;
-    
+
      while ( i<firstArr.length && j<secondArr.length) {
        if (compareFunc(firstArr[i], secondArr[j])) {
          sortedArr.push(firstArr[i]);
@@ -63,29 +64,30 @@ Based on article [Merge Sort Algorithm in JavaScript](https://medium.com/javascr
          j +=1;
        }
      }
-      return [...sortedArr, ...firstArr.splice(i), ...secondArr.splice(j)]  
+      return [...sortedArr, ...firstArr.splice(i), ...secondArr.splice(j)]
     }
-    
+
     const compareFunction = (firstNumber, secondNumber) => {
       return firstNumber < secondNumber;
     }
-    
+
     const mergeSort = (arrayToSort, compareFunc) => {
       if (arrayToSort.length < 2) {
         return arrayToSort;
       }
-    
+
       const middle = Math.floor(arrayToSort.length/2);
       const firstArr = mergeSort(arrayToSort.slice(0,middle), compareFunc);
       const secondArr = mergeSort(arrayToSort.slice(middle), compareFunc);
       return merge(firstArr, secondArr, compareFunc);
     }
-    
+
     const unsortedArr = [87, 56, 95, 96, 5, 45];
-    
+
     const sortedArray = mergeSort(unsortedArr, compareFunction);
-    
+
     console.log(sortedArray); // [5, 45, 56, 87, 95, 96]
+</code></pre>
 ```
 
 ### Employment history
@@ -93,10 +95,10 @@ Based on article [Merge Sort Algorithm in JavaScript](https://medium.com/javascr
 ##### Dec 2019 - present time
 -   **Finfort R&D**.\
     *Krasnodar (Russia)*
-    Front-End Developer. Worked on a B2B product. Used `Nuxt` (`Vue`) and `Stencil`. Since 2020, I have been working remotely. 
+    Front-End Developer. Worked on a B2B product. Used `Nuxt` (`Vue`) and `Stencil`. Since 2020, I have been working remotely.
 
 ##### Jul 2019 - Dec 2019
--  **Ajax, a real estate agency.** 
+-  **Ajax, a real estate agency.**
    *Krasnodar (Russia).*
    Front-End Developer. Worked on an in-house product. Used `Vue`.
 
@@ -105,7 +107,7 @@ Based on article [Merge Sort Algorithm in JavaScript](https://medium.com/javascr
     Stavropol (Russia).
 
 ### Education
-#### *Qualifications* 
+#### *Qualifications*
 ---------------------------------------
 ##### November 2020 - present time
 - **[ITMO University](https://design.itmo.ru/courses/web-developer/)**\
@@ -115,22 +117,22 @@ Based on article [Merge Sort Algorithm in JavaScript](https://medium.com/javascr
 ##### Jun 2018 - Jul 2019
 - **[Geekbrains](https://geekbrains.ru/geek_university/web)**\
   *Moscow, Russia*\
-  Online Web Developer course. Training projects on [Github](https://github.com/KSGitUser?tab=repositories) 
+  Online Web Developer course. Training projects on [Github](https://github.com/KSGitUser?tab=repositories)
 
 I'm trying to get a continuing education including, but not all of them: `TypeScript` course on learn.javascript.ru, `Nuxt.js` and `Vue.js` by Maximilian Schwarzmüller on Udemy.
 
-#### *Higher education* 
+#### *Higher education*
 --------------------------------------
 ##### 2002 - 2005
 -    **North Caucasian Polytechnic University**\
     *Stavropol, Russia*\
-    Full-time postgraduate studies.\ 
+    Full-time postgraduate studies.\
     Academic degree: *Candidate of Technical Sciences*
- 
+
 ##### 1997 - 2002
 - **Stavropol State University**\
   *Stavropol, Russia*\
-  Faculty of Romance-Germanic Languages.\ 
+  Faculty of Romance-Germanic Languages.\
   Specialty: *Computer Science and English Teacher*
 
 ### English language

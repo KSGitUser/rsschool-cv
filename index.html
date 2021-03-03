@@ -99,6 +99,59 @@
           </ul>
         </div>
       </section>
+      <section class="code-example">
+        <div class="wrapper">
+          <hgroup>
+            <h3 id="code-example-id">Code example</h3>
+            <h4>Merge sort of array</h4>
+          </hgroup>
+          <details open>
+            <summary>A sorting algorithm in JavaScript. Based on article <a class="code-example__link"
+                href="https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060">Merge Sort
+                Algorithm in JavaScript</a>
+            </summary>
+            <pre><code class="language-javascript">
+  const merge = (firstArr, secondArr, compareFunc) => {
+    const sortedArr = [];
+    let i=0;
+    let j=0;
+
+    while ( i<firstArr.length && j<secondArr.length) {
+      if (compareFunc(firstArr[i], secondArr[j])) {
+        sortedArr.push(firstArr[i]);
+        i += 1;
+      } else {
+        sortedArr.push(secondArr[j]);
+        j +=1;
+      }
+    }
+    return [...sortedArr, ...firstArr.splice(i), ...secondArr.splice(j)]
+  }
+
+  const compareFunction = (firstNumber, secondNumber) => {
+    return firstNumber < secondNumber;
+  }
+
+  const mergeSort = (arrayToSort, compareFunc) => {
+    if (arrayToSort.length < 2) {
+      return arrayToSort;
+    }
+
+    const middle = Math.floor(arrayToSort.length/2);
+    const firstArr = mergeSort(arrayToSort.slice(0,middle), compareFunc);
+    const secondArr = mergeSort(arrayToSort.slice(middle), compareFunc);
+    return merge(firstArr, secondArr, compareFunc);
+  }
+
+  const unsortedArr = [87, 56, 95, 96, 5, 45];
+
+  const sortedArray = mergeSort(unsortedArr, compareFunction);
+
+  console.log(sortedArray); // [5, 45, 56, 87, 95, 96]
+</code></pre>
+          </details>
+        </div>
+      </section>
     </main>
   </body>
 </html>
