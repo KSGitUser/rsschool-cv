@@ -117,47 +117,45 @@
                 href="https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060"
                 target="_blank">Merge Sort Algorithm in JavaScript</a>
             </summary>
-            <pre>
-  <code class="language-javascript">
-  const merge = (firstArr, secondArr, compareFunc) => {
-    const sortedArr = [];
-    let i=0;
-    let j=0;
+            <pre><code class="language-javascript">
+    const merge = (firstArr, secondArr, compareFunc) => {
+      const sortedArr = [];
+      let i = 0;
+      let j = 0;
 
-    while ( i<firstArr.length && j<secondArr.length) {
-      if (compareFunc(firstArr[i], secondArr[j])) {
-        sortedArr.push(firstArr[i]);
-        i += 1;
-      } else {
-        sortedArr.push(secondArr[j]);
-        j +=1;
+      while (i &lt; firstArr.length && j &lt; secondArr.length) {
+        if (compareFunc(firstArr[i], secondArr[j])) {
+          sortedArr.push(firstArr[i]);
+          i += 1;
+        } else {
+          sortedArr.push(secondArr[j]);
+          j += 1;
+        }
       }
-    }
-    return [...sortedArr, ...firstArr.splice(i), ...secondArr.splice(j)]
-  }
-
-  const compareFunction = (firstNumber, secondNumber) => {
-    return firstNumber < secondNumber;
-  }
-
-  const mergeSort = (arrayToSort, compareFunc) => {
-    if (arrayToSort.length < 2) {
-      return arrayToSort;
+      return [...sortedArr, ...firstArr.splice(i), ...secondArr.splice(j)]
     }
 
-    const middle = Math.floor(arrayToSort.length/2);
-    const firstArr = mergeSort(arrayToSort.slice(0,middle), compareFunc);
-    const secondArr = mergeSort(arrayToSort.slice(middle), compareFunc);
-    return merge(firstArr, secondArr, compareFunc);
-  }
+    const compareFunction = (firstNumber, secondNumber) =&gt; {
+      return firstNumber &lt; secondNumber;
+    }
 
-  const unsortedArr = [87, 56, 95, 96, 5, 45];
+    const mergeSort = (arrayToSort, compareFunc) =&gt; {
+      if (arrayToSort.length &lt; 2) {
+        return arrayToSort;
+      }
 
-  const sortedArray = mergeSort(unsortedArr, compareFunction);
+      const middle = Math.floor(arrayToSort.length / 2);
+      const firstArr = mergeSort(arrayToSort.slice(0, middle), compareFunc);
+      const secondArr = mergeSort(arrayToSort.slice(middle), compareFunc);
+      return merge(firstArr, secondArr, compareFunc);
+    }
 
-  console.log(sortedArray); // [5, 45, 56, 87, 95, 96]
-  </code>
-</pre>
+    const unsortedArr = [87, 56, 95, 96, 5, 45];
+
+    const sortedArray = mergeSort(unsortedArr, compareFunction);
+
+    console.log(sortedArray); // [5, 45, 56, 87, 95, 96]
+</code></pre>
           </details>
         </div>
       </section>
