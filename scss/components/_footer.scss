@@ -1,5 +1,6 @@
 .footer-logo-object {
   max-height: 32px;
+  pointer-events: none;
 }
 
 .footer {
@@ -11,6 +12,5 @@
     display: flex;
     justify-content: center;
     flex: 1 1 auto;
-
   }
 }

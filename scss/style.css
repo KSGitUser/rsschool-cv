@@ -572,6 +572,7 @@ h5 {
 
 .footer-logo-object {
   max-height: 32px;
+  pointer-events: none;
 }
 
 .footer .wrapper {
