@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
     <title>Curriculum vitae - Sergey Krikun</title>
   </head>
   <body>
@@ -12,9 +13,10 @@
         <h1>CURRICULUM VITAE</h1>
         <div class="personal-details">
           <h3 id="personal-details-header-id">Personal details</h3>
-          <address>
-            <figure>
+          <address class="address">
+            <figure class="photo photo__wrapper">
               <figcaption>
+                <img src="" alt="Sergey Krikun Photo">
                 <p class="cv-name" id="sergey-krikun"><em>Sergey Krikun</em></p>
               </figcaption>
             </figure>
@@ -117,7 +119,7 @@
                 href="https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060"
                 target="_blank">Merge Sort Algorithm in JavaScript</a>
             </summary>
-            <pre><code class="language-javascript">
+            <pre><code class="language-javascript code">
     const merge = (firstArr, secondArr, compareFunc) => {
       const sortedArr = [];
       let i = 0;
