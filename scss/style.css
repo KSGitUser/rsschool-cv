@@ -574,9 +574,9 @@ h5 {
   max-height: 32px;
 }
 
-.footer {
-  padding: 32px;
-  border-top: 1px solid black;
+.footer .wrapper {
+  border-top: 1px solid gray;
+  padding: 16px 0;
 }
 .footer .layout-column {
   display: flex;

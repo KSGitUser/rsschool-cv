@@ -3,8 +3,10 @@
 }
 
 .footer {
-  padding: $indent*4;
-  border-top: 1px solid black;
+  .wrapper{
+    border-top: 1px solid $color-border;
+    padding: $indent*2 0;
+  }
   .layout-column {
     display: flex;
     justify-content: center;
