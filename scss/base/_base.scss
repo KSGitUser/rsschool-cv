@@ -1,0 +1,10 @@
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 1200px;
+  margin: auto;
+}
