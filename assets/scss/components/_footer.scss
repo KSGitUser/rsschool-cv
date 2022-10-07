@@ -1,0 +1,16 @@
+.footer-logo-object {
+  max-height: 32px;
+  pointer-events: none;
+}
+
+.footer {
+  .wrapper{
+    border-top: 1px solid $color-border;
+    padding: $indent*2 0;
+  }
+  .layout-column {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+  }
+}

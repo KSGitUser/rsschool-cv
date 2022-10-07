@@ -1,13 +1,21 @@
 {
-  "private": true,
+  "author": "Sergey Krikun",
+  "private": false,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "npx push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.11"
+    "nuxt": "3.0.0-rc.11",
+    "push-dir": "^0.4.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
   }
 }
