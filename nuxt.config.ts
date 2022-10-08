@@ -7,5 +7,8 @@ export default defineNuxtConfig({
     target: 'static',
     router: {
         base: '/rsschool-cv/'
+    },
+    build: {
+        publicPath: '/rsschool-cv'
     }
 })
